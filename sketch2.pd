@@ -1,4 +1,4 @@
-#N canvas 111 92 703 498 10;
+#N canvas 150 126 703 498 10;
 #X obj 102 324 line~;
 #X obj 42 281 noise~;
 #X obj 87 358 *~;
@@ -27,14 +27,14 @@
 #X obj 42 305 *~ 0.1;
 #X msg 102 300 1 \, 0 50;
 #X text 21 65 super cool techno sequencer;
-#X obj 142 239 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 142 239 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 13
 13;
 #X obj 285 242 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 13;
 #X obj 379 313 *~ 1;
 #X obj 102 269 spigot;
 #X obj 267 274 spigot;
-#X obj 460 243 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 460 243 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 4
 4;
 #X obj 442 275 spigot;
 #X obj 379 242 select 6 14;

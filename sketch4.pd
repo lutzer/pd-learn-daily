@@ -11,9 +11,9 @@
 #X obj 238 173 sp/envelope;
 #X obj 177 129 osc~ 440;
 #X obj 235 243 dac~;
-#X obj 278 96 nbx 5 14 5 2000 0 1 empty empty empty 0 -8 0 10 -262144
+#X obj 278 96 nbx 5 14 5 2000 0 1 empty empty attack 0 -8 0 10 -262144
 -1 -1 20 256 0;
-#X obj 353 97 nbx 5 14 5 5000 0 1 empty empty empty 0 -8 0 10 -262144
+#X obj 353 97 nbx 5 14 5 5000 0 1 empty empty decay 0 -8 0 10 -262144
 -1 -1 500 256 0;
 #X connect 0 0 2 0;
 #X connect 1 0 0 0;
