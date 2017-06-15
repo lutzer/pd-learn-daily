@@ -1,6 +1,6 @@
 # pd-submodules
-=======
-# pd-submodules
+
+Some reusable puredata submodules
 
 ## How to add this as a subtree to other repositories
 
