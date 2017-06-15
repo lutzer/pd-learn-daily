@@ -5,7 +5,7 @@
 -1;
 #X obj 222 138 mod 16;
 #X obj 222 164 hradio 15 0 0 16 empty empty empty 0 -8 0 10 -262144
--1 -1 14;
+-1 -1 13;
 #X obj 39 297 select 0 4 8 12;
 #X obj 224 72 metro 117;
 #X obj 206 344 osc~ 120;
@@ -22,7 +22,6 @@
 4;
 #X obj 442 335 spigot;
 #X obj 379 302 select 6 14;
-#X obj 42 365 *~ 0.3;
 #X obj 400 405 sp/envelope 500 10;
 #X obj 379 349 osc~ 120;
 #X obj 71 406 sp/envelope 5 50;
@@ -31,9 +30,10 @@
 #X obj 234 405 sp/envelope 5 100;
 #X text 17 10 15th June 2017 \; sequencer v2 with submodules and
 envelopes;
+#X obj 42 365 *~ 0.2;
 #X text 44 521 Problem: still audible clicks when envelope value is
-changed. Is there a way to prevent that?;
-#X connect 0 0 18 0;
+changed. Is there a way to prevent that? solved!;
+#X connect 0 0 25 0;
 #X connect 2 0 6 0;
 #X connect 3 0 4 0;
 #X connect 4 0 9 0;
@@ -43,27 +43,27 @@ changed. Is there a way to prevent that?;
 #X connect 5 1 13 0;
 #X connect 5 2 13 0;
 #X connect 5 3 13 0;
-#X connect 6 0 22 0;
+#X connect 6 0 21 0;
 #X connect 7 0 8 0;
-#X connect 8 0 24 0;
+#X connect 8 0 23 0;
 #X connect 9 0 14 0;
 #X connect 9 1 14 0;
 #X connect 10 0 13 1;
 #X connect 11 0 14 1;
-#X connect 12 0 19 0;
-#X connect 13 0 21 1;
-#X connect 14 0 24 1;
+#X connect 12 0 18 0;
+#X connect 13 0 20 1;
+#X connect 14 0 23 1;
 #X connect 15 0 16 1;
-#X connect 16 0 19 1;
+#X connect 16 0 18 1;
 #X connect 17 0 16 0;
 #X connect 17 1 16 0;
-#X connect 18 0 21 0;
-#X connect 19 0 1 0;
-#X connect 19 0 1 1;
-#X connect 20 0 12 0;
-#X connect 21 0 1 0;
-#X connect 21 0 1 1;
-#X connect 22 0 3 0;
-#X connect 23 0 6 0;
-#X connect 24 0 1 0;
-#X connect 24 0 1 1;
+#X connect 18 0 1 0;
+#X connect 18 0 1 1;
+#X connect 19 0 12 0;
+#X connect 20 0 1 0;
+#X connect 20 0 1 1;
+#X connect 21 0 3 0;
+#X connect 22 0 6 0;
+#X connect 23 0 1 0;
+#X connect 23 0 1 1;
+#X connect 25 0 20 0;
