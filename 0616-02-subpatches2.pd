@@ -1,0 +1,39 @@
+#N canvas 391 97 875 380 10;
+#X text 14 7 16th June 2017 \; building a delayed loop subpatch;
+#X obj 136 202 print finished;
+#X msg 70 99 5;
+#X obj 73 148 sp/loop 300;
+#X obj 32 201 print running;
+#X obj 315 56 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 305 237 dac~;
+#X obj 268 155 osc~ 240;
+#X text 265 271 creates 5 delayed tones \, but what i really want is
+a duplication of the loop \, so you can run simultainous loops, f
+44;
+#X obj 356 157 f;
+#X text 388 86 iterations;
+#X obj 452 194 print length;
+#X text 207 87 intial length;
+#X msg 294 87 100;
+#X obj 356 115 sp/loop 150;
+#X obj 314 195 sp/envelope 100 50;
+#X obj 399 156 * 0.7;
+#X text 443 149 decrease length every iteration, f 16;
+#X msg 356 86 10;
+#X text 436 114 delay;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 3 1 1 0;
+#X connect 5 0 18 0;
+#X connect 5 0 13 0;
+#X connect 7 0 15 0;
+#X connect 9 0 11 0;
+#X connect 9 0 15 1;
+#X connect 9 0 16 0;
+#X connect 13 0 9 0;
+#X connect 14 0 9 0;
+#X connect 15 0 6 0;
+#X connect 15 0 6 1;
+#X connect 16 0 9 1;
+#X connect 18 0 14 0;

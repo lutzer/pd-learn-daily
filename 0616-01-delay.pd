@@ -1,0 +1,61 @@
+#N canvas 177 86 1077 341 10;
+#X obj 26 126 osc~ 440;
+#X obj 66 216 dac~;
+#X obj 83 84 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 112 127 delay 500;
+#X text 17 250 just sends a single delayed message, f 34;
+#X obj 276 120 osc~ 440;
+#X obj 316 210 dac~;
+#X obj 72 166 sp/envelope 100 10;
+#X text 289 248 sends multiple delayed messages \; but bang value
+changes the envelope., f 39;
+#X obj 554 111 osc~ 440;
+#X obj 594 201 dac~;
+#X obj 652 83 pipe 500;
+#X text 11 5 16th June 2017create a simple message delay, f 31;
+#X text 550 248 fixed it \, but it would be nice to change the way
+the envelope behaves: i.e sending in a number would change the duration
+\, but not attack/decay, f 36;
+#X obj 600 151 sp/envelope 100 10;
+#X obj 619 30 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 652 60 1;
+#X obj 652 105 t b;
+#X obj 312 162 sp/envelope 10 100;
+#X obj 396 118 pipe 500;
+#X msg 338 71 10;
+#X obj 822 127 osc~ 440;
+#X obj 862 217 dac~;
+#X obj 858 169 sp/envelope 10 100;
+#X obj 923 131 pipe 500;
+#X msg 884 78 10;
+#X text 845 249 sends 3 delayed tones;
+#X obj 923 104 until 3;
+#X connect 0 0 7 0;
+#X connect 2 0 3 0;
+#X connect 2 0 7 1;
+#X connect 3 0 7 1;
+#X connect 5 0 18 0;
+#X connect 7 0 1 0;
+#X connect 7 0 1 1;
+#X connect 9 0 14 0;
+#X connect 11 0 17 0;
+#X connect 14 0 10 0;
+#X connect 14 0 10 1;
+#X connect 15 0 14 1;
+#X connect 15 0 16 0;
+#X connect 16 0 11 0;
+#X connect 17 0 14 1;
+#X connect 18 0 6 0;
+#X connect 18 0 6 1;
+#X connect 19 0 18 1;
+#X connect 20 0 18 1;
+#X connect 20 0 19 0;
+#X connect 21 0 23 0;
+#X connect 23 0 22 0;
+#X connect 23 0 22 1;
+#X connect 24 0 23 1;
+#X connect 25 0 23 1;
+#X connect 25 0 27 0;
+#X connect 27 0 24 0;
