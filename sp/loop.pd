@@ -13,8 +13,7 @@
 #X obj 169 239 delay;
 #X obj 31 124 t b f;
 #X text 27 9 time delayed loop;
-#X text 28 30 the left inlet takes a float with the number of iteration
-\, the right one the delay time.;
+#X text 28 30 the left inlet takes a float with the number of iteration\, the right one the delay time.;
 #X connect 2 0 12 0;
 #X connect 3 0 4 0;
 #X connect 4 0 6 0;
