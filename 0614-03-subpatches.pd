@@ -1,4 +1,4 @@
-#N canvas 332 93 1048 338 10;
+#N canvas 244 69 1048 361 10;
 #X obj 57 144 sp/count;
 #X obj 58 105 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
@@ -7,13 +7,12 @@
 #X text 27 35 trying out subpatches;
 #X obj 221 99 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 238 166 sp/envelope;
 #X obj 172 135 osc~ 440;
 #X obj 235 242 dac~;
 #X obj 278 97 nbx 5 14 5 2000 0 1 empty empty attack 0 -8 0 10 -262144
--1 -1 264 256 0;
+-1 -1 277 256 0;
 #X obj 353 96 nbx 5 14 5 5000 0 1 empty empty decay 0 -8 0 10 -262144
--1 -1 20 256 0;
+-1 -1 126 256 0;
 #X obj 501 100 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 432 133 osc~ 440;
@@ -24,28 +23,29 @@
 #X obj 711 226 dac~;
 #X text 776 94 determines length of the envelope, f 18;
 #X msg 732 94 1000;
-#X obj 493 177 sp/envelope 200 100;
 #X msg 695 73 10;
-#X obj 714 166 sp/envelope 100 500;
 #X msg 93 104 0;
 #X text 526 97 length equals attack length, f 15;
+#X obj 238 166 sp/envelope;
+#X obj 493 177 sp/envelope 35 104;
+#X obj 714 166 sp/envelope 200 500;
 #X connect 0 0 2 0;
 #X connect 1 0 0 0;
-#X connect 5 0 6 1;
-#X connect 6 0 8 0;
-#X connect 6 0 8 1;
-#X connect 7 0 6 0;
-#X connect 9 0 6 2;
-#X connect 10 0 6 3;
-#X connect 11 0 20 1;
-#X connect 12 0 20 0;
-#X connect 15 0 9 0;
-#X connect 15 0 10 0;
-#X connect 16 0 22 0;
-#X connect 19 0 22 1;
-#X connect 20 0 13 0;
-#X connect 20 0 13 1;
-#X connect 21 0 22 1;
-#X connect 22 0 17 0;
-#X connect 22 0 17 1;
-#X connect 23 0 0 0;
+#X connect 5 0 22 1;
+#X connect 6 0 22 0;
+#X connect 8 0 22 2;
+#X connect 9 0 22 3;
+#X connect 10 0 23 1;
+#X connect 11 0 23 0;
+#X connect 14 0 8 0;
+#X connect 14 0 9 0;
+#X connect 15 0 24 0;
+#X connect 18 0 24 1;
+#X connect 19 0 24 1;
+#X connect 20 0 0 0;
+#X connect 22 0 7 0;
+#X connect 22 0 7 1;
+#X connect 23 0 12 0;
+#X connect 23 0 12 1;
+#X connect 24 0 16 0;
+#X connect 24 0 16 1;
